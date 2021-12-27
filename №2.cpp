@@ -75,6 +75,17 @@ int main() {
 		cout << "Matrix C: " << endl;
 		print_array(masC, n, m1);
 	}
-
+	for (int i = 0; i < n; i++)
+		delete[] masA[i];
+	delete[] masA;
+	
+	for (int i = 0; i < n; i++)
+		delete[] masB[i];
+	delete[] masB;
+	
+	for (int i = 0; i < n; i++)
+		delete[] masC[i];
+	delete[] masC;
+	
 	return 0;
 }
